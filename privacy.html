@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - John Personal Assistant</title>
+  <meta name="description" content="Privacy policy for John Personal Assistant, a private personal AI assistant, describing how it accesses, uses, stores and shares Google user data.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+    <p><em>John Personal Assistant. Last updated: 14 October 2026.</em></p>
+  </header>
+
+  <main>
+    <h2>1. About this policy</h2>
+    <p>
+      John Personal Assistant ("the assistant") is a private, personal AI assistant built and used by a single
+      individual, its developer and owner ("the owner"). It is not offered to the public and has no other users.
+      This policy explains how the assistant accesses, uses, stores and shares Google user data, which in
+      practice is the owner's own data from the owner's own Google accounts.
+    </p>
+
+    <h2>2. Google data the assistant can access</h2>
+    <p>The assistant is connected to two Google accounts, both belonging to the owner, using read-only permissions only:</p>
+    <table>
+      <thead>
+        <tr><th>Account</th><th>Data</th><th>Google OAuth scope</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Personal account</td>
+          <td>Gmail (read)</td>
+          <td><code>https://www.googleapis.com/auth/gmail.readonly</code></td>
+        </tr>
+        <tr>
+          <td>Personal account</td>
+          <td>Google Drive (read)</td>
+          <td><code>https://www.googleapis.com/auth/drive.readonly</code></td>
+        </tr>
+        <tr>
+          <td>Personal account</td>
+          <td>Google Docs (read)</td>
+          <td><code>https://www.googleapis.com/auth/documents.readonly</code></td>
+        </tr>
+        <tr>
+          <td>Work account</td>
+          <td>Gmail (read)</td>
+          <td><code>https://www.googleapis.com/auth/gmail.readonly</code></td>
+        </tr>
+        <tr>
+          <td>Work account</td>
+          <td>Google Calendar (read)</td>
+          <td><code>https://www.googleapis.com/auth/calendar.readonly</code></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      The assistant also receives the basic account identifiers (<code>openid</code> and
+      <code>userinfo.email</code>) that Google includes when an account is connected, so it can tell the two
+      accounts apart.
+    </p>
+    <p>
+      The assistant is configured so that it can only search and read messages, files, documents and calendar
+      events. It cannot send email or create, edit or delete any Google data through these connections.
+    </p>
+
+    <h2>3. How the data is used</h2>
+    <p>
+      Google data is used only to provide the owner's own assistant features: answering the owner's requests
+      (for example, looking up an email, a document or the next calendar event) and preparing briefings and
+      reminders for the owner. Data is retrieved when the owner asks for it or when a scheduled briefing runs.
+      The data is not used for advertising, is not sold, and is not used to determine creditworthiness or for
+      lending. The owner does not use Google user data to develop or train generalised AI or machine-learning
+      models.
+    </p>
+
+    <h2>4. Processing by other services</h2>
+    <p>
+      To answer requests, the assistant software runs on a private server operated by the owner (rented from a
+      hosting provider). When Google data is needed to answer a request, the relevant content is sent to an
+      AI model provider (Anthropic, the maker of the Claude models) for processing, and the assistant's replies
+      are delivered to the owner through a private chat service (Discord). These providers process the data
+      only as part of delivering the assistant's responses to the owner, and they handle that data under their
+      own terms and privacy policies, including their own retention practices, which the owner does not control.
+      Google user data is not shared with any other third party, and is not shared for advertising or data
+      brokering.
+    </p>
+
+    <h2>5. Storage and retention</h2>
+    <ul>
+      <li>
+        <strong>Credentials:</strong> the access tokens that let the assistant read the connected Google
+        accounts are stored on the owner's private server. They can be deleted by the owner at any time, which
+        ends the assistant's access.
+      </li>
+      <li>
+        <strong>Content:</strong> the assistant does not maintain a separate copy or archive of the owner's
+        Gmail, Drive, Docs or Calendar. However, parts of Google data that the assistant retrieves can appear in
+        its working context, conversation history, or short notes it keeps on the owner's server in order to give
+        continuity between conversations, and in the chat service used to talk to it. The owner can delete this
+        history and these notes at any time.
+      </li>
+    </ul>
+
+    <h2>6. Who can see the data</h2>
+    <p>
+      Only the owner has access to the assistant and to the data it retrieves. No other person reads Google user
+      data, except where it is necessary for security purposes (for example, investigating abuse or a bug),
+      to comply with applicable law, or where the owner has given explicit consent.
+    </p>
+
+    <h2>7. Security</h2>
+    <p>
+      The assistant runs on a private server operated by the owner, and the Google connections are limited to
+      read-only scopes and to the specific functions listed above. No system is perfectly secure, and the owner
+      aims to take reasonable steps to keep the server and credentials protected.
+    </p>
+
+    <h2>8. Google API Services User Data Policy</h2>
+    <p>
+      The assistant's use and transfer of information received from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+      Policy</a>, including the Limited Use requirements.
+    </p>
+
+    <h2>9. Control and revoking access</h2>
+    <p>
+      The owner retains full control of both connected Google accounts. Access can be revoked at any time at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, by removing
+      the assistant from the list of third-party apps with access to the account, and by deleting the stored
+      credentials from the server. The owner can also delete the assistant's history and notes at any time.
+    </p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>
+      If the assistant's Google integrations change, this policy will be updated before the change takes
+      effect, and the "last updated" date above will change.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      Questions about this policy can be raised by opening an issue in the GitHub repository that hosts this site.
+    </p>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Back to home</a></p>
+  </footer>
+</body>
+</html>
